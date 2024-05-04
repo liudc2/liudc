@@ -121,3 +121,38 @@ button:hover,
     color: #ffffff;
     cursor: pointer;
 }
+@keyframes liu {
+    0%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+
+button:hover{
+    animation-name: liu;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes liu2{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+input:hover{
+    animation-name: liu2;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
