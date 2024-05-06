@@ -76,7 +76,7 @@ button:hover,
     width: 50%;
     margin: 50px auto;
     height: 20px;
-    background-color: transparent;
+    background-color: #000000;
     border-radius: 10px;
 }
 
