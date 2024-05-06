@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+@keyframes liu {
+    0%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(1.05);
+    }
+}
+div:hover{
+    animation-name: liu;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+div:hover{
+    box-shadow: 0 0 15px; #00000
+}
