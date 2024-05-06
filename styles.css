@@ -78,7 +78,7 @@ button:hover,
     width: 50%;
     margin: 50px auto;
     height: 20px;
-    background-color: #000000;
+    background-color: transparent;
     border-radius: 10px;
 }
 
@@ -95,7 +95,7 @@ button:hover,
 }
 
 #results {
-    background-color: transparent;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     max-width: 80%;
