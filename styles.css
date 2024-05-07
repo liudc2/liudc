@@ -29,7 +29,7 @@ button,
 [id$="-btn"] {
     background-color: transparent; 
     border: 1px white solid;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     color: #ffffff;
     cursor: pointer;
@@ -39,9 +39,11 @@ button,
 
 button:hover,
 [id$="-btn"]:hover {
-    background-color: ##797979;
-
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.4);
 }
+
+
+
 
 #branding {
     font-family: "Times New Roman", Times, serif;
@@ -66,10 +68,14 @@ button:hover,
     padding: 10px;
     width: 60%;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
     color: white; 
     outline: none; 
+    
+}
+#keyword:hover{
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.4);
 }
 
 #progress-container {
@@ -145,8 +151,8 @@ button:hover{
     animation-name: liu;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 @keyframes liu2{
     0%{
@@ -160,14 +166,6 @@ button:hover{
 
 input:hover{
     animation-name: liu2;
-    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-button:hover{
-    box-shadow: 0 0 15px #f0eded;
-}
-input:hover{
-    box-shadow: 0 0 15px #d6e0d7
 }
