@@ -1,151 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    background-position: center!important; background-size: cover!important;
+    background-attachment: fixed!important; 
+        font-family: "Times New Roman", Times, serif;
+        background-color: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
 }
-
-body {
-    position: relative;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: bold;
-    background: #000;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 h1 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 3em;
-    animation: fadeInUp 2s ease forwards;
+    text-align: center;
+    color: #fff;
 }
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
 }
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
 }
-.container {
+
+button,
+[id$="-btn"] {
+    background-color: transparent; 
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+
+button:hover,
+[id$="-btn"]:hover {
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.4);
+}
+
+
+
+
+#branding {
+    font-family: "Times New Roman", Times, serif;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    z-index: 9999; 
+}
+
+#main-content {
+    margin-top: 100px; 
+}
+
+#search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#keyword {
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px;
+    width: 60%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white; 
+    outline: none; 
+    
+}
+#keyword:hover{
+    box-shadow: 0 0 5px 3px rgba(255, 255, 255, 0.4);
+}
+
+#progress-container {
+    width: 50%;
+    margin: 50px auto;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 50%;
+    background-color: #ff000aa7;
+    border-radius: 10px;
+}
+
+#results-box {
+    margin-top: 20px;
     text-align: center;
 }
-.button {
-    position: relative;
-    display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4px;
-    overflow: hidden;
-    margin-right: 50px;
+
+#results {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    color: #ffffff;
+    overflow: auto;
 }
 
-.button:hover {
-    background: #fff;
-    color: #050801;
-    box-shadow: 0 0 5px #fff,
-                0 0 25px #fff,
-                0 0 50px #fff,
-                0 0 200px #fff;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-}
-.button span {
-    position: absolute;
-    display: block;
+#results p {
+    word-wrap: break-word;
+    margin-bottom: 10px;
 }
 
-.button span:nth-child(1) {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #fff);
-    animation: animate1 1s linear infinite;
+#results hr {
+    margin: 10px 0;
 }
 
-@keyframes animate1 {
-    0% {
-        left: -100%;
+#download-btn {
+    font-family: "Times New Roman", Times, serif;
+    display: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#download-btn:hover {
+    background-color: #797979;
+}
+
+#search-btn {
+    font-family: "Times New Roman", Times, serif;
+}
+@keyframes liu {
+    0%{
+        transform: scale(1);
     }
-    50%,100% {
-        left: 100%;
-    }
-}
-.button span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #fff);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
-}
-
-@keyframes animate2 {
-    0% {
-        top: -100%;
-    }
-    50%,100% {
-        top: 100%;
+    
+    100%{
+        transform: scale(1.05);
     }
 }
 
-.button span:nth-child(3){ 
-    bottom: 0; 
-    right: -100%; 
-    width: 100%; 
-    height: 2px; 
-    background: linear-gradient(270deg,transparent,#fff); 
-    animation: animate3 1s linear infinite; 
-    animation-delay: 0.50s; 
+
+button:hover{
+    animation-name: liu;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes liu2{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
 }
 
-@keyframes animate3 {
-    0% {
-        right: -100%;
-    }
-    50%,100% {
-        right: 100%;
-    }
-}
-
-.button span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #fff);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
-}
-
-@keyframes animate4 {
-    0% {
-        bottom: -100%;
-    }
-    50%,100% {
-        bottom: 100%;
-    }
+input:hover{
+    animation-name: liu2;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
 }
